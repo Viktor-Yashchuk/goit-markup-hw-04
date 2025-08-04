@@ -63,13 +63,13 @@ button {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -339,6 +339,7 @@ button {
   gap: 24px;
   margin-bottom: 32px;
   padding: 0 16px;
+  justify-content: center;
 }
 
 .team-social-list-item {
@@ -356,6 +357,11 @@ button {
   border-radius: 50%;
 }
 
+.social-icons {
+  fill: #f4f4fd;
+}
+
+.team-social-list-link:hover,
 .team-social-list-link:hover {
   background-color: #404bbf;
 }
@@ -455,8 +461,11 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: top;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-text-box {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -477,8 +486,6 @@ button {
 }
 
 .footer-social-box {
-  margin-right: 120px;
-  align-items: baseline;
 }
 
 .footer-social-text {
@@ -507,6 +514,10 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
 }
 
 .footer-social-list-link:hover,

@@ -68,8 +68,8 @@ button {
 .header-container {
   display: flex;
   align-items: center;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -160,7 +160,7 @@ button {
 /* HERO */
 
 .section-hero {
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
   padding: 188px 0;
   margin: 0 auto;
@@ -171,6 +171,9 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url("/images/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-container {
@@ -229,6 +232,9 @@ button {
 }
 
 .benefits-list-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -325,9 +331,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-}
-
-.team-social-list-box {
+  margin-bottom: 8px;
 }
 
 .team-social-list {
@@ -414,7 +418,7 @@ button {
   padding: 40px 32px;
 }
 
-.portfolio-list-overlay-container:hover .text-overlay {
+.portfolio-list-item:hover .text-overlay {
   transform: translateY(0);
 }
 
@@ -472,6 +476,11 @@ button {
   color: #f4f4fd;
 }
 
+.footer-social-box {
+  margin-right: 120px;
+  align-items: baseline;
+}
+
 .footer-social-text {
   font-weight: 500;
   font-size: 16px;
@@ -500,6 +509,7 @@ button {
   border-radius: 50%;
 }
 
-.footer-social-list-link:hover {
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
   background-color: #31d0aa;
 }

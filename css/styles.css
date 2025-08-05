@@ -161,7 +161,6 @@ button {
 
 .section-hero {
   max-width: 1440px;
-  height: 600px;
   padding: 188px 0;
   margin: 0 auto;
   background-color: #2e2f42;
@@ -170,7 +169,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/hero-banner.jpg");
+    url("../images/hero-banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,8 +275,6 @@ button {
 /* TEAM */
 
 .section-team {
-  width: 1440px;
-  height: 780px;
   padding: 120px 0;
   background-color: #f4f4fd;
   margin: 0 auto;
@@ -337,7 +334,6 @@ button {
 .team-social-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 32px;
   padding: 0 16px;
   justify-content: center;
 }
